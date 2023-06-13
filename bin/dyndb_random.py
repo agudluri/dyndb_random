@@ -255,7 +255,7 @@ def db_item(row, value_defs):
         else:
             item[column_name] = { column_type: str(row[column_index]) }
 
-    return { "PutRequest": { "Item": item } }
+    return { "Item": item }
 
 
 def json_item(row, column_order):
@@ -288,8 +288,8 @@ def generate_data(table, num_rows):
         if write_csv:
             csv_rows.append(row)
 
-    if write_db_json:
-        json_items = { table: json_items }
+    # if write_db_json:
+    #     json_items = { table: json_items }
 
     if not output_file_name:
         output_file_name = table
@@ -301,7 +301,9 @@ def generate_data(table, num_rows):
         json_file_name = output_file_name + '.' + timestamp + '.json'
 
     with open(json_file_name, 'w') as json_file:
-        json.dump(json_items, json_file, indent=4)
+        for item in json_items:
+            json_file.write(json.dumps(item)+'\n')
+        # json.dump(json_items, json_file, indent=4)
 
     if write_db_json:
         print("DymanoDB JSON written to: " + json_file_name)
