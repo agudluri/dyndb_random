@@ -1,0 +1,21 @@
+{
+    "key": "customer_id",
+    "column_order": ["customer_id", "customer_name", "host_ip"],
+    "columns": {
+        "customer_id": {
+            "type": "N",
+            "format": "int",
+            "range": "1:9999"
+        },
+        "customer_name": {
+            "type": "S",
+            "format": "lorem",
+            "range": "1:2"
+        },
+        "host_ip": {
+            "type": "N",
+            "format": "int",
+            "range": "1:9999999999999999999999"
+        }
+    }
+}

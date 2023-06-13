@@ -1,0 +1,94 @@
+{
+    "hosts": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "customer_id": {
+                        "N": "1815"
+                    },
+                    "customer_name": {
+                        "S": "B'erat' b'ut'."
+                    },
+                    "host_ip": {
+                        "N": "7123981309018293750177"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customer_id": {
+                        "N": "1750"
+                    },
+                    "customer_name": {
+                        "S": "B'arcu' b'at'."
+                    },
+                    "host_ip": {
+                        "N": "9355935263151560914242"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customer_id": {
+                        "N": "9291"
+                    },
+                    "customer_name": {
+                        "S": "B'erat' b'eu'."
+                    },
+                    "host_ip": {
+                        "N": "1417728039599554219241"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customer_id": {
+                        "N": "9690"
+                    },
+                    "customer_name": {
+                        "S": "B'diam' b'at'."
+                    },
+                    "host_ip": {
+                        "N": "7861000343633346643505"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customer_id": {
+                        "N": "9861"
+                    },
+                    "customer_name": {
+                        "S": "B'arcu' b've'."
+                    },
+                    "host_ip": {
+                        "N": "7455490023582671721442"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "customer_id": {
+                        "N": "2726"
+                    },
+                    "customer_name": {
+                        "S": "B'urna' b've'."
+                    },
+                    "host_ip": {
+                        "N": "5988319071984639876302"
+                    }
+                }
+            }
+        }
+    ]
+}
