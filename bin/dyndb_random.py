@@ -230,7 +230,10 @@ def generate_row(value_defs, column_order):
     for column_name in column_order:
         column_def = value_defs['columns'][column_name]
 
-        row.append(generate_value(column_def, row, column_order))
+        if isinstance(column_def, str):
+            row.append(column_def)
+        else:
+            row.append(generate_value(column_def, row, column_order))
 
     return row
 

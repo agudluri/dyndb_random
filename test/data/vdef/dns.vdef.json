@@ -1,0 +1,13 @@
+{
+    "key": "_time",
+    "column_order": ["_time", "host", "_raw", "source", "clzfilename", "clz_dir", "clz_subdir"],
+    "columns": {
+        "_time": {"type": "N", "format": "float", "range": "59.886921:59.968600"},
+        "host": "hec42v120925",
+        "_raw": {"type": "S", "format": "lorem", "range": "3:5"},
+        "source": "/var/log/named/default.log",
+        "clzfilename": "default.log",
+        "clz_dir": "dns",
+        "clz_subdir": "binddns"
+    }
+}
