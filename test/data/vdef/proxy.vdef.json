@@ -4,10 +4,10 @@
     "columns": {
         "_time": {"type": "N", "format": "float", "range": "19.886921:99.968600"},
         "host": {"type": "S", "format": "lorem", "range": "1:2"},
-        "_raw": {"type": "S", "format": "lorem", "range": "3:7"},
-        "source": "/var/log/named/default.log",
-        "clzfilename": "default.log",
-        "clz_dir": "dns",
-        "clz_subdir": "binddns"
+        "_raw": {"type": "S", "format": "lorem", "range": "7:14"},
+        "source": "/var/log/squid/access.log",
+        "clzfilename": "access.log",
+        "clz_dir": "proxy",
+        "clz_subdir": "squid"
     }
 }

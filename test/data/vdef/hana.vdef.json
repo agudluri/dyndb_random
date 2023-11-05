@@ -1,0 +1,13 @@
+{
+    "key": "_time",
+    "column_order": ["_time", "clz_dir", "clz_subdir", "_raw", "source", "host", "clzfilename"],
+    "columns": {
+        "_time": {"type": "N", "format": "float", "range": "19.886921:99.968600"},
+        "clz_dir": "hana",
+        "clz_subdir": "hanaaudit",
+        "_raw": {"type": "S", "format": "lorem", "range": "7:14"},
+        "source": "/var/log/hana",
+        "host": {"type": "S", "format": "lorem", "range": "1:2"},
+        "clzfilename": "hana"
+    }
+}
